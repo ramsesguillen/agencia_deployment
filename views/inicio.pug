@@ -1,0 +1,32 @@
+extends ./layouts/index
+
+block slider
+    .slider
+        h1 Rio de Janeiro
+        em aventura
+
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb5 Sobre nosotros
+        .row.mb-5
+            .col-md-6
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, molestias hic natus temporibus soluta quod ullam odio cum incidunt non molestiae quia doloribus provident at. Recusandae quo architecto ab! Alias autem quasi sunt deserunt, excepturi?
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur itaque inventore a vero dolor quos? Deserunt praesentium id rem atque, repellat, libero et, cumque minus saepe reprehenderit. Voluptatum, numquam alias officia hic
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="Inicio nosotros", class="img-fluid")
+
+        include ./layouts/bloque_viajes
+
+    .descuento
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 16 de Abril de 20200 - 21 de Abril de 2022
+                        p.precio $2,500 USD
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layouts/bloque_testimoniales
